@@ -14,11 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery
-//= require jquery_ujs
-//= require bootstrap.min
-//= require contact
-//= require scripts
-//= require quote_calc
+//= require bootstrap-sprockets
 //= require_tree .
 
 

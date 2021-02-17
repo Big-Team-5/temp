@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require jquery
 //= require bootstrap-sprockets
+//= require quote_calc
 //= require_tree .
 
 

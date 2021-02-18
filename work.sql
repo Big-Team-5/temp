@@ -50,12 +50,12 @@ DROP TABLE IF EXISTS `employees`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `employees` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(255) DEFAULT NULL,
-  `prenom` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `first_name` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
   `active` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;

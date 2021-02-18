@@ -13,16 +13,25 @@
 ActiveRecord::Schema.define(version: 2021_02_17_234543) do
 
   create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "nom"
-    t.string "prenom"
+    t.string "last_name"
+    t.string "first_name"
     t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "email"
     t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "quote_forms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "FirstName"
+    t.string "LastName"
+    t.string "PhoneNumber"
+    t.string "Email"
+    t.string "Elevators"
+    t.string "Price_Per_Unit"
+    t.string "Sum_For_All_Units"
+    t.string "Installation_Fees"
+    t.string "Total_Price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

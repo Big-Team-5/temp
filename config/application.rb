@@ -8,6 +8,22 @@ Bundler.require(*Rails.groups)
 
 module Hello
   class Application < Rails::Application
+    config.generators do |g|
+      g.orm             :active_record
+      g.template_engine :erb
+      g.test_framework  :test_unit, fixture: true
+    end
+    config.generators do |g|
+      g.scaffold_stylesheet false
+    end
+    config.generators do |g|
+      g.orm             :active_record
+      g.template_engine :erb
+      g.test_framework  :test_unit, fixture: false
+      g.stylesheets     false
+    end
+    
+    
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
@@ -16,4 +32,8 @@ module Hello
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
+  
+  
+  
 end
+

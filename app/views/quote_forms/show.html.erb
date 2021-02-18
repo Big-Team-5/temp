@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @quote_form.FirstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @quote_form.LastName %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @quote_form.PhoneNumber %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @quote_form.Email %>
+</p>
+
+<%= link_to 'Edit', edit_quote_form_path(@quote_form) %> |
+<%= link_to 'Back', quote_forms_path %>

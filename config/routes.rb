@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :quote_forms
   #get 'page/index'
-  root 'page#index'
+  root 'quote_forms#index'
   get  'page/residential'
   get  'page/commercial'
   get  'page/quote'

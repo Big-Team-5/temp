@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_18_041142) do
+ActiveRecord::Schema.define(version: 2021_02_18_144010) do
 
   create_table "bests", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "pizza"
@@ -24,8 +24,27 @@ ActiveRecord::Schema.define(version: 2021_02_18_041142) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "controls", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "freak"
+    t.string "love"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dirts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "game"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "finds", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "place"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "foods", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -41,7 +60,11 @@ ActiveRecord::Schema.define(version: 2021_02_18_041142) do
     t.string "LastName"
     t.string "PhoneNumber"
     t.string "Email"
-    t.string "elev_needed"
+    t.string "Elevators"
+    t.string "Price Per Unit"
+    t.string "Sum For All Units"
+    t.string "Installation Fees"
+    t.string "Total Price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -51,7 +74,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_041142) do
     t.string "LastName"
     t.string "PhoneNumber"
     t.string "Email"
-    t.string "elev_needed"
+    t.string "elevators"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

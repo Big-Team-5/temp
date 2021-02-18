@@ -36,6 +36,7 @@ gem 'jquery-rails', '~> 4.4'
 gem "font-awesome-rails" 
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'sassc-rails', '>= 2.1.0'
-gem 'bootstrap-slider-rails'
+gem 'rails_admin', '~> 2.0'
+
 
 

@@ -32,8 +32,10 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'font-awesome-sass', '~> 5.15', '>= 5.15.1'
-gem 'bootstrap-sass', '~> 3.3.4'
 gem 'jquery-rails', '~> 4.4'
+gem "font-awesome-rails" 
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'bootstrap-slider-rails'
+
 

@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  resources :controls
-  resources :dirts
-  resources :foods
   resources :quote_forms
   #get 'page/index'
   root 'page#index'

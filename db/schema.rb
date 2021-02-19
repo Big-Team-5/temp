@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_18_144010) do
-
-  
+ActiveRecord::Schema.define(version: 2021_02_18_032532) do
 
   create_table "quote_forms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "FirstName"
@@ -20,14 +18,12 @@ ActiveRecord::Schema.define(version: 2021_02_18_144010) do
     t.string "PhoneNumber"
     t.string "Email"
     t.string "Elevators"
-    t.string "Price Per Unit"
-    t.string "Sum For All Units"
-    t.string "Installation Fees"
-    t.string "Total Price"
+    t.string "Price_Per_Unit"
+    t.string "Sum_For_All_Units"
+    t.string "Installation_Fees"
+    t.string "Total_Price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  
 
 end
